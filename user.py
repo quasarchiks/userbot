@@ -7,7 +7,7 @@ api_id = 27723896
 api_hash = '5e40d3c33c3ef5e6b4ad03d70382ee5e'
 session_name = "my_userbot"
 
-app = Client("my_account", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
+app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
 # Функция для удаления всех сообщений пользователя
 async def delete_all_messages(client, message):
