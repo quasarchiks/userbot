@@ -33,5 +33,9 @@ async def delete_all_messages(client, message):
 async def clear_all_messages(client, message):
     await delete_all_messages(client, message)
 
+@app.on_message(filters.me & filters.command("hello", prefixes="."))
+async def clear_all_messages(client, message):
+    await message.reply_text("Hello from python!")
+
 
 app.run()
